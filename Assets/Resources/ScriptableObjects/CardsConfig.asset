@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7ed61708d5147b1a0a6db8b88a28ea2, type: 3}
+  m_Name: CardsConfig
+  m_EditorClassIdentifier: 
+  Cards:
+  - Sprite: {fileID: 21300000, guid: 7f882299d4e05cb42afb8ed75386268f, type: 3}
+    ColorSelectionData:
+      Name: Black
+      Color: {r: 0, g: 0, b: 0, a: 1}
+      Factor: 2
+    SuitSelectionData:
+      Name: Spades
+      Sprite: {fileID: 21300000, guid: 25483961dfb488a4e8b0f45c45b90d07, type: 3}
+      Factor: 4
+  - Sprite: {fileID: 21300000, guid: 15e235231d3081c489e54e500b5ddb78, type: 3}
+    ColorSelectionData:
+      Name: Black
+      Color: {r: 0, g: 0, b: 0, a: 1}
+      Factor: 2
+    SuitSelectionData:
+      Name: Cross
+      Sprite: {fileID: 21300000, guid: b08c6b66036622a49a0663db2b00fe23, type: 3}
+      Factor: 4
+  - Sprite: {fileID: 21300000, guid: fe074cb118b6c4047a21665b278a507c, type: 3}
+    ColorSelectionData:
+      Name: Red
+      Color: {r: 0.9215687, g: 0.18823531, b: 0, a: 1}
+      Factor: 2
+    SuitSelectionData:
+      Name: Diamonds
+      Sprite: {fileID: 21300000, guid: aff939b91cf5abb4085930022f9a728a, type: 3}
+      Factor: 4
+  - Sprite: {fileID: 21300000, guid: ba9bd12af6c5d68449f1ba44db9374cb, type: 3}
+    ColorSelectionData:
+      Name: Red
+      Color: {r: 0.9215687, g: 0.18823531, b: 0, a: 1}
+      Factor: 2
+    SuitSelectionData:
+      Name: Heart
+      Sprite: {fileID: 21300000, guid: 2bf3b236e6ea8f948906324379e64c01, type: 3}
+      Factor: 4

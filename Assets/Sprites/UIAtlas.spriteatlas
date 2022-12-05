@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UIAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: c3c496dbeb028074c83c6fcc66ddd494, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 81ab51d00eb03324b8c9212bf5334a63, type: 3}
+  - {fileID: 21300000, guid: 25483961dfb488a4e8b0f45c45b90d07, type: 3}
+  - {fileID: 21300000, guid: e97c5bb19965d46c9b4b8f8b7666b2ef, type: 3}
+  - {fileID: 21300000, guid: fe074cb118b6c4047a21665b278a507c, type: 3}
+  - {fileID: 21300000, guid: 17167332cc62279418a988cece7c05cb, type: 3}
+  - {fileID: 21300000, guid: 28f14cd229101284db5e583f2b274176, type: 3}
+  - {fileID: 21300000, guid: 15e235231d3081c489e54e500b5ddb78, type: 3}
+  - {fileID: 21300000, guid: f8e0efc32c4918d4db06fe45eeeb84e4, type: 3}
+  - {fileID: 21300000, guid: 2bf3b236e6ea8f948906324379e64c01, type: 3}
+  - {fileID: 21300000, guid: b08c6b66036622a49a0663db2b00fe23, type: 3}
+  - {fileID: 21300000, guid: bf1482b8ec9df4beca6ab64532046e0d, type: 3}
+  - {fileID: 21300000, guid: 7f882299d4e05cb42afb8ed75386268f, type: 3}
+  - {fileID: 21300000, guid: aff939b91cf5abb4085930022f9a728a, type: 3}
+  - {fileID: 21300000, guid: 68f098c9a3955e341b2d26c9fe8c5bcd, type: 3}
+  - {fileID: 21300000, guid: ba9bd12af6c5d68449f1ba44db9374cb, type: 3}
+  - {fileID: 21300000, guid: 51c6558d9240b0947840320fb5aca297, type: 3}
+  - {fileID: 21300000, guid: 8c674f8ec4b41a940bc4404a35ed8c8a, type: 3}
+  - {fileID: 21300000, guid: ddcd382f16c454947a108a08b49e58c2, type: 3}
+  - {fileID: 21300000, guid: e6eccb3fdfc674168aa8a9c07be55e75, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Arrow
+  - Spades
+  - LIGHT_1
+  - AceOfDiamonds
+  - g_button_2_pressed
+  - yellow_button
+  - AceOfCross
+  - green_button
+  - Heart
+  - Cross
+  - LIGHT_3
+  - AceOfSpades
+  - Diamonds
+  - CardHeader
+  - AceOfHearts
+  - info_bgr
+  - Quad
+  - button_close
+  - LIGHT_2
+  m_RenderDataMap: {}
+  m_Tag: UIAtlas
+  m_IsVariant: 0
