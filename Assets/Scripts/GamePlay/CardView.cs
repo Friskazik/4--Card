@@ -4,18 +4,12 @@ using DG.Tweening;
 namespace Card
 {
    
-    public class CardManager : MonoBehaviour
+    public class CardView : MonoBehaviour
     {
         
         [SerializeField] private GameObject _back;
-
-       
         [SerializeField] private GameObject _model;
-
-        
         [SerializeField] private SpriteRenderer _icon;
-
-       
         public CardsConfig.Model Data { private set; get; } 
 
         
@@ -26,7 +20,6 @@ namespace Card
             Data = model;
         }
 
-        
         public Tween Rotate(Vector3 value, float duration, Ease ease) =>
             transform.DOLocalRotate(value, duration).SetEase(ease);
 

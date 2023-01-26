@@ -6,7 +6,7 @@ using TMPro;
 namespace Card
 {
     
-    public class BootStart : MonoBehaviour
+    public class HUDState : MonoBehaviour
     {
         [SerializeField] private TextMeshPro _headerText;
         [SerializeField] private Button _playButton;
@@ -17,7 +17,7 @@ namespace Card
         [Header("Types bet")] [SerializeField] private ColorSelectionPanel _colorSelectionPanel;
         [SerializeField] private SuitSelectionPanel _suitSelectionPanel;
 
-        private CardsController _cardsController;
+        private CardsRemoveMix _cardsController;
         private InfoPopup _infoPopup;
 
         private readonly Vector3 _openRotate = new(0, 180, 0);
@@ -32,7 +32,7 @@ namespace Card
             _colorSelectionPanel.Init(cardsConfig.GetColorSelectionData());
             _suitSelectionPanel.Init(cardsConfig.GetSuitSelectionData());
 
-            _cardsController = FindObjectOfType<CardsController>();
+            _cardsController = FindObjectOfType<CardsRemoveMix>();
             _cardsController.Init(cardsConfig.Cards);
             _cardsController.CardSelected += CardOnSelected;
 
@@ -83,9 +83,9 @@ namespace Card
         private void UpdateHeader(string value) => _headerText.text = value;
 
       
-        private async void CardOnSelected(CardManager card)
+        private async void CardOnSelected(CardView card)
         {
-            card.SetLayer(LayerManager.Popup);
+            card.SetLayer(DataLayer.Popup);
 
             _infoPopup.Show(true);
 

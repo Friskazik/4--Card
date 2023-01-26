@@ -8,27 +8,15 @@ using DG.Tweening;
 namespace Card
 {
    
-    public class CardsController : MonoBehaviour
+    public class CardsRemoveMix : MonoBehaviour
     {
         
         [SerializeField] private List<Transform> _points;
-        
-        
-        [SerializeField] private CardManager _prefab;
-
-        
-        public event Action<CardManager> CardSelected; 
-
-       
-        private readonly List<CardManager> _cards = new(); 
-        
-       
+        [SerializeField] private CardView _prefab;
+        public event Action<CardView> CardSelected; 
+        private readonly List<CardView> _cards = new(); 
         private readonly Vector3 _openRotate = new(0, 180, 0); 
-
-       
         private Camera _camera; 
-
-       
         private bool _isActive; 
 
        
@@ -50,7 +38,7 @@ namespace Card
         }
 
        
-        private CardManager GetCardManager(Transform parent)
+        private CardView GetCardManager(Transform parent)
         {
             var card = Instantiate(_prefab); 
             var tr = card.transform;
@@ -164,7 +152,7 @@ namespace Card
                 return;
 
            
-            var card = hit.collider.GetComponent<CardManager>();
+            var card = hit.collider.GetComponent<CardView>();
             if (card == null)
                 return;
 
@@ -177,7 +165,7 @@ namespace Card
         {
             foreach (var card in _cards)
             {
-                card.SetLayer(LayerManager.Default);
+                card.SetLayer(DataLayer.Default);
                 
                 var tr = card.transform;
                 tr.localRotation = Quaternion.identity;
